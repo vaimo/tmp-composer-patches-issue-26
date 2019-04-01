@@ -335,9 +335,6 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "5.5-dev"
-                },
-                "patches_applied": {
-                    "composer_patches/visible-patch.patch": "pre-support unique indexes on nullable fields, md5:4262f0cd5565bc2dafe1e00e0834253e"
                 }
             },
             "autoload": {
@@ -2212,12 +2209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaimo/composer-patches.git",
-                "reference": "016741e657ad3396167d08980b1d8cd2b1665928"
+                "reference": "e0a8ee8db8d52b452bea90e826ebe229b790cbac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/016741e657ad3396167d08980b1d8cd2b1665928",
-                "reference": "016741e657ad3396167d08980b1d8cd2b1665928",
+                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/e0a8ee8db8d52b452bea90e826ebe229b790cbac",
+                "reference": "e0a8ee8db8d52b452bea90e826ebe229b790cbac",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2299,7 @@
                 "utils",
                 "version restriction"
             ],
-            "time": "2019-04-01T14:21:05+00:00"
+            "time": "2019-04-01T17:02:51+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
