@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83c8a13409510f5d03ba29260e8e8d64",
+    "content-hash": "4ca34e8832d0b6b95faaf017341c1c5a",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -335,6 +335,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "5.5-dev"
+                },
+                "patches_applied": {
+                    "composer_patches/visible-patch.patch": "pre-support unique indexes on nullable fields, md5:4262f0cd5565bc2dafe1e00e0834253e"
                 }
             },
             "autoload": {
@@ -2205,16 +2208,16 @@
         },
         {
             "name": "vaimo/composer-patches",
-            "version": "4.12.0",
+            "version": "dev-research/issue-26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaimo/composer-patches.git",
-                "reference": "e34048300de82faafa8ce3518a72ef9d5145589d"
+                "reference": "016741e657ad3396167d08980b1d8cd2b1665928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/e34048300de82faafa8ce3518a72ef9d5145589d",
-                "reference": "e34048300de82faafa8ce3518a72ef9d5145589d",
+                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/016741e657ad3396167d08980b1d8cd2b1665928",
+                "reference": "016741e657ad3396167d08980b1d8cd2b1665928",
                 "shasum": ""
             },
             "require": {
@@ -2299,7 +2302,7 @@
                 "utils",
                 "version restriction"
             ],
-            "time": "2019-03-31T20:29:15+00:00"
+            "time": "2019-04-01T14:21:05+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2356,7 +2359,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "vaimo/composer-patches": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
