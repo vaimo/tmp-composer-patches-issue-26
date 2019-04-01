@@ -1,15 +1,19 @@
-Patching in a decent hello
+pre-support unique indexes on nullable fields
 
-@package seld/jsonlint
+@package laravel/framework
 
---- src/Seld/JsonLint/JsonParser.php.org
-+++ src/Seld/JsonLint/JsonParser.php
-@@ -38,6 +38,8 @@
-     private $vstack; // semantic value stack
-     private $lstack; // location stack
-
-+    // Hello Patching!
-+
-     private $symbols = array(
-         'error'                 => 2,
-         'JSONString'            => 3,
+--- src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php.org
++++ src/Illuminate/Database/Schema/Grammars/SqlServerGrammar.php
+@@ -105,10 +105,11 @@
+      */
+     public function compileUnique(Blueprint $blueprint, Fluent $command)
+     {
+-        return sprintf('create unique index %s on %s (%s)',
++        return sprintf('create unique index %s on %s (%s) where %s is not null',
+             $this->wrap($command->index),
+             $this->wrapTable($blueprint),
+-            $this->columnize($command->columns)
++            $this->columnize($command->columns),
++            implode(' is not null and ', $this->wrapArray($command->columns))
+         );
+     }
