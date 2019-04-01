@@ -1,0 +1,21 @@
+{
+    "name": "vaimo/tmp-composer-patches-issue-26",
+    "description": "Temporary project to test vaimo/composer-patches issue/26",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "vaimo/composer-patches": "^4.12"
+    },
+    "authors": [
+        {
+            "name": "Allan Paiste",
+            "email": "allan.paiste@vaimo.com"
+        }
+    ],
+    "extra": {
+        "patcher": {
+            "search": "composer_patches",
+            "ignore": ["patches"]
+        }
+    }
+}

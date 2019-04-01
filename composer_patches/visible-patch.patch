@@ -1,0 +1,15 @@
+Patching in a decent hello
+
+@package seld/jsonlint
+
+--- src/Seld/JsonLint/JsonParser.php.org
++++ src/Seld/JsonLint/JsonParser.php
+@@ -38,6 +38,8 @@
+     private $vstack; // semantic value stack
+     private $lstack; // location stack
+
++    // Hello Patching!
++
+     private $symbols = array(
+         'error'                 => 2,
+         'JSONString'            => 3,
