@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ca34e8832d0b6b95faaf017341c1c5a",
+    "content-hash": "ee041fedcb9f0bf5a907c5f1f5f1b9ff",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2209,12 +2209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaimo/composer-patches.git",
-                "reference": "e0a8ee8db8d52b452bea90e826ebe229b790cbac"
+                "reference": "173efc75fdf2720220208c1603d53b421e4afbae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/e0a8ee8db8d52b452bea90e826ebe229b790cbac",
-                "reference": "e0a8ee8db8d52b452bea90e826ebe229b790cbac",
+                "url": "https://api.github.com/repos/vaimo/composer-patches/zipball/173efc75fdf2720220208c1603d53b421e4afbae",
+                "reference": "173efc75fdf2720220208c1603d53b421e4afbae",
                 "shasum": ""
             },
             "require": {
@@ -2299,7 +2299,7 @@
                 "utils",
                 "version restriction"
             ],
-            "time": "2019-04-01T17:02:51+00:00"
+            "time": "2019-04-02T08:51:57+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

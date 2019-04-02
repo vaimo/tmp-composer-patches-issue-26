@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "vaimo/composer-patches": "dev-research/issue-26",
+        "vaimo/composer-patches": "dev-research/issue-26#173efc75fdf2720220208c1603d53b421e4afbae",
         "laravel/framework": "^5.5"
     },
     "authors": [
